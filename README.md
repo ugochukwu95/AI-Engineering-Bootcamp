@@ -2,6 +2,15 @@
 
 A simple local chat app built with **Node.js**, **TypeScript**, and the **Anthropic API**. You type messages in a browser, and Claude replies.
 
+Setup the project commands:
+npm init -y
+npm install -D typescript @types/node tsx
+npx tsc --init
+mkdir src && echo 'console.log("Hello")' > src/index.ts
+
+npm install @anthropic-ai/sdk dotenv
+
+
 There are two versions:
 
 | Version | Command | What it does |
