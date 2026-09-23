@@ -168,9 +168,6 @@
     ></textarea>
     <p class="hint">The system prompt shapes Claude's personality and rules for the whole conversation.</p>
     <div class="toolbar">
-      <!-- <button type="button" id="preset-tutor">Tutor</button>
-      <button type="button" id="preset-concise">Concise</button> -->
-      <!-- <button type="button" id="preset-socratic">Socratic</button> -->
       <button type="button" id="new-chat">New chat</button>
     </div>
   </div>
@@ -195,17 +192,17 @@
       socratic: "You are a Socratic coach. Never give the final answer directly. Guide the user with thoughtful questions that help them discover the answer themselves.",
     };
 
-    document.getElementById("preset-tutor").addEventListener("click", () => {
-      systemPromptEl.value = presets.tutor;
-    });
+    // document.getElementById("preset-tutor").addEventListener("click", () => {
+    //   systemPromptEl.value = presets.tutor;
+    // });
 
-    document.getElementById("preset-concise").addEventListener("click", () => {
-      systemPromptEl.value = presets.concise;
-    });
+    // document.getElementById("preset-concise").addEventListener("click", () => {
+    //   systemPromptEl.value = presets.concise;
+    // });
 
-    document.getElementById("preset-socratic").addEventListener("click", () => {
-      systemPromptEl.value = presets.socratic;
-    });
+    // document.getElementById("preset-socratic").addEventListener("click", () => {
+    //   systemPromptEl.value = presets.socratic;
+    // });
 
     document.getElementById("new-chat").addEventListener("click", async () => {
       messagesEl.innerHTML = "";
@@ -226,7 +223,8 @@
       return el;
     }
 
-    form.addEventListener("submit", async (e) => {
+    sendBtn.addEventListener("click", async (e) => {
+      console.log('hi')
       e.preventDefault();
       const text = input.value.trim();
       if (!text) return;
