@@ -9,10 +9,12 @@
     "dev:single": "tsx watch src/single-turn.ts",
     "dev:multi": "tsx watch src/multi-turn.ts",
     "dev:system": "tsx watch src/system-prompt.ts",
+    "dev:tools": "tsx watch src/tool-calling.ts",
     "start": "tsx src/multi-turn.ts",
     "start:single": "tsx src/single-turn.ts",
     "start:multi": "tsx src/multi-turn.ts",
     "start:system": "tsx src/system-prompt.ts",
+    "start:tools": "tsx src/tool-calling.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
